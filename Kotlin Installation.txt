@@ -1,0 +1,7 @@
+Source : https://github.com/JetBrains/kotlin/releases/tag/v1.6.10
+Latest version(24 February) : https://github.com/JetBrains/kotlin/releases/download/v1.6.10/kotlin-compiler-1.6.10.zip
+
+Extraction Directory : C:\kotlinc
+
+Go to "Modifier variable d'environnement" > "Variable d'environnement"
+And in the column "Variable Utilisateur" double click to "Path" and add "C:\kotlinc\bin"

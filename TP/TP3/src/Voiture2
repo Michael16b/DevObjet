@@ -1,0 +1,57 @@
+class Voiture(mod: String, coul : String, vitMax : Double) {
+    private var modele : String 
+    private var couleur : String 
+    private var vitesseMaximum  : Double
+    private var VitesseCourante : Double = 0.0
+    private var enMarche : Boolean = false
+    private var proprietaire : Personne? = null
+    init {
+        modele = mod
+        couleur = coul 
+        vitesseMaximum = vitMax
+    }
+    fun acheter(acheteur : Personne) {
+        proprietaire = acheteur
+    }
+    fun demarrer() {
+        enMarche = true
+    }
+    fun arreter() {
+        enMarche = false
+    }
+    fun estEnMarche() : Boolean{
+        return enMarche
+    }
+    fun repeindre(nouvelleCouleur : String) {
+        if (!enMarche) {
+            couleur = nouvelleCouleur
+
+        }
+    }
+    fun accelerer(acceleration : Double) : Double {
+        if (enMarche && VitesseCourante+acceleration < vitesseMaximum) {
+            return VitesseCourante + acceleration
+        }
+        return VitesseCourante
+    }
+    fun deccelerer(deceleration: Double) : Double {
+        if (enMarche && VitesseCourante-deceleration < vitesseMaximum && VitesseCourante-deceleration >= 0.0) {
+            return VitesseCourante - deceleration
+        }
+        return VitesseCourante
+    }
+    fun afficher() {
+        var voitureAffichage : String = "Voiture $modele de couleur $couleur"
+        if (proprietaire != null) {
+            voitureAffichage += ", propriété de ${proprietaire!!.donneNomComplet()}"
+        }
+        if (enMarche) {
+            voitureAffichage += ", roule à $VitesseCourante / $vitesseMaximum."
+        }
+        else {
+            voitureAffichage += ", est à l'arrêt."
+        }
+
+    }
+
+}

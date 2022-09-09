@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestPgcd" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-03-22T09:09:14" hostname="U-INF-J-F222-24" time="0.019">
+  <properties/>
+  <testcase name="testPgcd2()" classname="TestPgcd" time="0.017"/>
+  <testcase name="testPgcd3()" classname="TestPgcd" time="0.001"/>
+  <testcase name="testPgcd()" classname="TestPgcd" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+Le contenu de cette évaluation concerne tout ce qui a été traité durant les
+semaines 1 et 2 (avant les vacances) : CM 1 et 2, TP1, TD2 et TP2.
+
+Attention : on va vous demander de développer certaines choses en Kotlin. Le minima
+est que votre code à la fin de l'évaluation compile sans erreur, sinon cela vaut 0
+; ensuite, on évaluera ce que vous aurez codé.
+
+L'épreuve durera 45mn (+1/3 temps) et s'effectuera en mode DS, sans accès à
+internet, ni aucun autre document.
